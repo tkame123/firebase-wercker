@@ -2,7 +2,7 @@ FROM node:8.11-stretch
 
 # set user to avoid permission issues
 # (see https://github.com/nodejs/node-gyp/issues/1236)
-USER node
+# USER node
 RUN mkdir /home/node/.npm-global
 ENV PATH=/home/node/.npm-global/bin:$PATH
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
@@ -11,4 +11,4 @@ ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 RUN npm install -g firebase-tools
 
 # reset user back to root
-USER root
+# USER root
