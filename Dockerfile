@@ -1,4 +1,4 @@
-FROM node:8.11-stretch
+FROM node:10.15.1-stretch
 
 # set user to avoid permission issues
 # (see https://github.com/nodejs/node-gyp/issues/1236)
